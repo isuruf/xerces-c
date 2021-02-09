@@ -246,6 +246,10 @@ else
                     [
                       AC_MSG_RESULT([no])
                       AC_DEFINE_UNQUOTED([HAVE_WCSRTOMBS], 0, [Define to 1 if you have the `wcsrtombs' function.])
+                    ],		    
+                    [
+                      AC_MSG_RESULT([yes])
+                      AC_DEFINE_UNQUOTED([HAVE_WCSRTOMBS], 1, [Define to 1 if you have the `wcsrtombs' function.])
                     ]
                  )
 AC_MSG_CHECKING([for mbsrtowcs])
@@ -268,6 +272,10 @@ else
                     [
                       AC_MSG_RESULT([no])
                       AC_DEFINE_UNQUOTED([HAVE_MBSRTOWCS], 0, [Define to 1 if you have the `mbsrtowcs' function.])
+                    ],	    
+                    [
+                      AC_MSG_RESULT([yes])
+                      AC_DEFINE_UNQUOTED([HAVE_WCSRTOMBS], 1, [Define to 1 if you have the `wcsrtombs' function.])
                     ]
                  )
 
